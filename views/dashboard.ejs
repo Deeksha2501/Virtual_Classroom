@@ -1,0 +1,42 @@
+<%- include ("partials/header")%>
+
+<form action="/users/logout">
+    <button class="log-out-btn">
+        LOGOUT
+        <i class="far fa-times-circle"></i>
+    </button>
+</form>
+
+
+<div class="dash_head">
+    <p class="dash_p">Welcome <%= user.name %></p>
+</div>
+
+<div class="box">
+    <form action="<%= "/assignment/create-class/" +  user._id + "/"%>">
+            <div class="btn">
+                <button class="dash_button1">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <p class="btn_dash_text">Create class</p>
+                </button>
+            </div>
+    </form>
+
+    <form action="<%= "/homework/join-class/" +  user._id + "/"%>">
+            <div class="btn">
+                <button class="dash_button2">
+                    <i class="fas fa-user-graduate"></i>
+                    <p class="btn_dash_text">Join class</p>
+                </button>
+            </div>
+    </form>
+    <form action="<%= "/assignment/show-classes/" +  user._id + "/"%>">
+            <div class="btn">
+                <button class="dash_button3">
+                    <i class="fas fa-chalkboard"></i>
+                    <p class="btn_dash_text">Show class</p>
+                </button>
+            </div>
+    </form>
+</div>
+

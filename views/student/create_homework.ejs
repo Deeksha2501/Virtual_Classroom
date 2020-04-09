@@ -1,0 +1,28 @@
+<%- include ("../partials/header")%>
+
+<!-- <h1>In Homework_create</h1>
+<form action = "<%="/homework/home-create/" + id + "/" + cid + "/" + aid + "/"%>" method = "post" enctype="multipart/form-data">
+<input type="text" placeholder= "Homework name"  name = "h_name">
+<div class="custom-file mb-3">
+    <input type="file" name="file" id="file" class="custom-file-input">
+    <label for="file" class="custom-file-label">Choose File</label>
+  </div>
+  <button type="submit"></button>
+</form>
+
+<a href="<%="/homework/home-show/" + cid + "/" + id + "/"%>" >show homework</a> -->
+
+
+<div class="cwrapper">
+    <div class="cinput-fields">
+        <div class="cinput-fields2">
+            <form action = "<%="/homework/home-create/" + id + "/" + cid + "/" + aid + "/"%>" method = "post" enctype="multipart/form-data">
+                <input class = "cinput" type="text" placeholder= "Homework name*"  name = "h_name" required>
+                <!-- <input class = "cinput_msg" type="text" placeholder="Enter Assignment Details here" name = "a_details"> -->
+                    <input type="file" name="file" id="file" required>
+                    <label for="file" class = "label"><i id = "icon_attach" class="fas fa-paperclip"> </i>  Add*</label>;
+                <button class = "sb_btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>

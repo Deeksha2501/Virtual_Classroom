@@ -1,0 +1,38 @@
+<%- include ("../partials/header")%>
+
+
+<div class="scommon">
+  <div class="std">
+    <div class="f_head">Submission for Assignment <%=title%></div>
+    <% for(var i=0 ; i<data.length ; i++){ %>
+    <div class="stds">
+      <h6><%=data[i].st_name%></h6>
+      <a class = "attach_doc" href="<%="/assignment/images/" + data[i].h_filename + "/" %>"><%=data[i].hw_details%></a>
+      </a>
+      <%if(data[i].checked == null) {%>
+        <form class = "sub_form" action="<%="/assignment/marking/" + aid + "/" + cid + "/" + data[i]._id + "/" %>" method="post">
+          <input class = "minput" type="Number" placeholder="Assign Marks" name="marks">
+          <span class = "red">
+            Unchecked
+          </span>
+        </form>
+        <%}else{%>
+        <span class = "green">
+          Checked
+        </span>
+        <% }%>
+    </div>
+    <%} %>
+  </div>
+</div>
+
+<div class="nav-bar">
+
+  <a class="a_f_dash" href="<%="/assignment/" + cid + "/" + id + "/" %>">Stream</a>
+  <a class="a_f_dash" href="<%="/assignment/assign-show/" + cid + "/" %>">ClassRoom</a>
+  <a class="a_f_dash" href="<%="/assignment/show-students/" + cid  + "/"%>">People</a>
+  <a class="a_f_dash" href="">Grades</a>
+</div>
+<a href="/dashboard">
+  <img src="/DSwithname.jpg" alt="logo" class="clogo">
+</a>

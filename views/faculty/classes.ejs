@@ -1,0 +1,28 @@
+<%- include ("../partials/header")%>
+
+<div class="classcommon">
+
+<div class="teacher">
+    <div class = "f_head">As a Teacher</div>
+    <%for(var i=0 ; i<f_classes.length ; i++){%>
+        <div class = show_class>
+            <a href="<%="/assignment/" + f_classes[i]._id + "/" + id + "/"%>" >
+                <%= f_classes[i].class_name %>
+            </a>
+        </div>
+        <%}%>
+</div>
+
+<div class="std">
+    <div class = "f_head">As a student</div>
+<%for(var i=0 ; i< s_classes.length ; i++){%>
+<div>
+    <div class="show_class">
+        <a href="<%="/homework/" + s_classes[i]._id + "/" + id + "/"%>" method="get">
+            <%= s_classes[i].class_name %>
+        </a>
+    </div>
+</div>
+<%}%>
+</div>
+</div>

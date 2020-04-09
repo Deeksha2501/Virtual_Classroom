@@ -1,0 +1,51 @@
+<%- include ("../partials/header")%>
+
+<div class="shcommon">
+    <div class="chstd">
+        <% for(var i=0 ; i<data.length ; i++){%>
+            
+        <div class="fh_head">Submission for Assignment <%=data[i].title%></div>
+        <%for(var j=0 ; j<data[i].homework.length ; j++){%>
+        <%if(id == data[i].homework[j].st_id){%>
+        <div class="sstds">
+           <div class="random">
+            <a class="attach_doc"
+            href="<%="/homework/images/" + data[i].homework[j].h_filename + "/" %>"><%= data[i].homework[j].hw_details %></a>
+           </div>
+           <div class="status">
+           <%if(data[i].homework[j].checked == null) {%>
+              <span class = "red">
+                Unchecked
+              </span>
+            <%}else{%>
+            <span class = "green">
+                Assigned marks - <%=data[i].homework[j].marks%>
+            </span>
+            <% }%>
+          </div>
+            <form class = "sbhwf"
+                action="<%= "/homework/home-delete/" + data[i]._id + "/" + cid + "/" + data[i].homework[j]._id + "/"%>"
+                method="post">
+                <button class="hwdicon">
+                    <i class="fas fa-times"></i>
+                </button>
+            </form>
+        </div>
+        <%}%>
+     <%}%>
+      </div>
+      <%}%>
+     </div>
+</div>
+
+
+
+<div class="nav-bar">
+    <a class="a_f_dash" href="<%="/homework/" + cid + "/" + id + "/" %>">Stream</a>
+    <a class="a_f_dash" href="<%="/homework/assignments/" + id + "/" + cid + "/"%>">ClassRoom</a>
+    <a class="a_f_dash" href="<%="/homework/show-classmates/" + cid  + "/"%>">People</a>
+  </div>
+  
+  <a href = "/dashboard">
+    <img src="/DSwithname.jpg" alt="logo" class="clogo">
+  </a>

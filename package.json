@@ -1,0 +1,39 @@
+{
+  "name": "assignment_hw_webapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-fileupload": "^1.1.7-alpha.3",
+    "express-flash": "0.0.2",
+    "express-layouts": "^1.0.0",
+    "express-session": "^1.17.0",
+    "fs": "0.0.1-security",
+    "gridfs-stream": "^1.1.1",
+    "method-override": "^3.0.0",
+    "mongo": "^0.1.0",
+    "mongod": "^2.0.0",
+    "mongoose": "^5.9.7",
+    "multer": "^1.4.2",
+    "multer-gridfs-storage": "^4.0.3",
+    "nodemon": "^2.0.2",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "devStart": "nodemon app.js"
+  },
+  "author": "Deeksha Sharma",
+  "license": "ISC"
+}

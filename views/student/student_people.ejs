@@ -1,0 +1,28 @@
+<%- include ("../partials/header")%>
+
+<div class="scommon">
+    <div class="teacher">
+      <div class = "f_head">Teacher</div>
+      <div class="teacher_name">
+        <%= fc_name%>
+      </div>
+    </div>
+    <div class="std">
+      <div class = "f_head">Students</div>
+    <% for(var i=0 ; i<data.length ; i++){ %>
+      <div class = "stds">
+          <%= data[i].st_name%>
+    </div>
+    <% } %>
+    </div>
+    </div>
+
+    <div class="nav-bar">
+        <a class="a_f_dash" href="<%="/homework/" + cid + "/" + id + "/" %>">Stream</a>
+        <a class="a_f_dash" href="<%="/homework/assignments/" + id + "/" + cid + "/"%>">ClassRoom</a>
+        <a class="a_f_dash" href="<%="/homework/show-classmates/" + cid  + "/"%>">People</a>
+      </div>
+      
+      <a href = "/dashboard">
+        <img src="/DSwithname.jpg" alt="logo" class="clogo">
+      </a>

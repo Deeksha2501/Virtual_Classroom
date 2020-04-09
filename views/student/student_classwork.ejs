@@ -1,0 +1,70 @@
+<%- include ("../partials/header")%>
+
+<div class="ccommon">
+  <div class="hcreate_b">
+    <button class="hcreate_btn">
+        <a class="hcreate_a" href="<%="/homework/home-show/" + cid + "/" + id + "/"%>"> Show Submitted Homework </a>
+    </button>
+</div>
+  <div class="cdis">
+      <%for(var i=0 ; i<data.length ; i++){%>
+      <div class="cdisbox">
+          <div class="ciconbox">
+              <span class="icon">
+                  <i class="fas fa-tasks"></i>
+              </span>
+          </div>
+          <div class="cmsg">
+                  <span class="c_ttl"><%=data[i].title  %>
+                      <a class="attach_doc" href="<%="/assignment/images/" + data[i].a_filename + "/" %>"><i
+                              class="fas fa-link"></i></a></span><br>
+              <span class="a_dtl"><%=data[i].a_details%></span>
+
+          </div>
+          <a href="<%="/homework/classwork/" + id + "/" + cid + "/" + data[i]._id + "/"%>">
+              <button class="cdicon">
+                  <i class="fas fa-plus"></i>
+              </button>
+            </a>
+
+      </div>
+      <%}%>
+</div>
+
+</div>
+
+
+
+<div class="nav-bar">
+  <a class="a_f_dash" href="<%="/homework/" + cid + "/" + id + "/" %>">Stream</a>
+  <a class="a_f_dash" href="<%="/homework/assignments/" + id + "/" + cid + "/"%>">ClassRoom</a>
+  <a class="a_f_dash" href="<%="/homework/show-classmates/" + cid  + "/"%>">People</a>
+</div>
+
+<a href = "/dashboard">
+  <img src="/DSwithname.jpg" alt="logo" class="clogo">
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

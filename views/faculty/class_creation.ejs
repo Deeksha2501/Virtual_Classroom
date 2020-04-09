@@ -1,0 +1,17 @@
+<%- include ("../partials/header")%>
+
+<div class="cc_matter">
+    <div class="span1">Great <%= name%></div>
+</div>
+
+<div class="wrapper">
+    <div class="input-fields">
+        <div class="input-fields2">
+            <form action="<%="/assignment/create-class/" + id + "/"%>" method="post">
+                <input class = "input" type="text" name="class_name" placeholder="Enter Class Name"><br>
+                <input class = "input" type="number" name="joining_id" placeholder="Create Unique Joining ID"><br>
+                <button class = "sb_btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>

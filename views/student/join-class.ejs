@@ -1,0 +1,16 @@
+<%- include ("../partials/header")%>
+
+<div class="cc_matter">
+   <div class="span1">Great <%= name%></div>
+</div>
+
+<div class="wrapper">
+   <div class="input-fields">
+       <div class="input-fields2">
+         <form action= "<%="/homework/join-class/" + id + "/"%>" method="post">
+            <input class = "input" type="text" placeholder="Enter Joining ID" name = "joining_id">
+            <button class = "sb_btn">Submit</button>
+         </form>
+       </div>
+   </div>
+</div>

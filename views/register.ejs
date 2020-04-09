@@ -1,0 +1,64 @@
+<%- include ("partials/header")%>
+
+<div class = "swcommon">
+<div  id = "check" class="row mt-5">
+  <div  id = "check" class="col-md-6 m-auto">
+    <div  id = "check" class="card card-body">
+      <h1  id = "check" class="text-center mb-3">
+        <i  id = "check" class="fas fa-user-plus"></i> Register
+      </h1>
+      <%- include ("partials/messages")%>
+      <form action="/users/register" method="POST">
+        <div  id = "check" class="form-group">
+          <label for="name"></label>
+          <input  id = "linput"
+            type="name"
+            id="name"
+            name="name"
+            class="form-control"
+            placeholder="Enter Name"
+            value="<%= typeof name != 'undefined' ? name : '' %>"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email"></label>
+          <input id = "linput"
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            placeholder="Enter Email"
+            value="<%= typeof email != 'undefined' ? email : '' %>"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password"></label>
+          <input id = "linput"
+            type="password"
+            id="password"
+            name="password"
+            class="form-control"
+            placeholder="Create Password"
+            value="<%= typeof password != 'undefined' ? password : '' %>"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password2"></label>
+          <input id = "linput"
+            type="password"
+            id="password2"
+            name="password2"
+            class="form-control"
+            placeholder="Confirm Password"
+            value="<%= typeof password2 != 'undefined' ? password2 : '' %>"
+          />
+        </div>
+        <button type="submit" class="sb_btn2">
+          Register
+        </button>
+      </form>
+      <p class="lead mt-4">Have An Account? <a id = "a" href="/users/login">Login</a></p>
+    </div>
+  </div>
+</div>
+</div>
