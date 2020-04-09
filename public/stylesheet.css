@@ -1031,7 +1031,8 @@ a.button{
 	margin : 0;
 	margin-left: -40px;
 	margin-right:   10px;
-	color : white
+	color : white;
+	margin-top : 10px;
 }
 
 .lr a{
