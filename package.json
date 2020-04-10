@@ -9,6 +9,7 @@
     "body-parser": "^1.19.0",
     "connect-flash": "^0.1.1",
     "custom": "0.0.0",
+    "dotenv": "^8.2.0",
     "ejs": "^3.0.2",
     "env": "0.0.2",
     "express": "^4.17.1",
