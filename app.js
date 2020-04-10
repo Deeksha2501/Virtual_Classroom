@@ -1,6 +1,7 @@
 require("./db/projectdb");
 require("./models/User");
 
+require('custom-env').env()
 const express = require('express');
 const expressLayouts = require('express-ejs-layouts');
 var mongoose = require("mongoose");
