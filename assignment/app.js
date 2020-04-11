@@ -25,7 +25,9 @@ app.use(methodOverride("_method"));
 app.use(bp.urlencoded({ extended: false }));
 app.use(express.static("public"));
 
-const mongoURI = "mongodb://localhost:27017/YourDB";
+require('dotenv').config();
+
+const mongoURI =  process.env.MONGO_URI;
 
 const conn = mongoose.createConnection(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
 
