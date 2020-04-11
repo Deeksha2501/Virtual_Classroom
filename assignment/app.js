@@ -16,7 +16,7 @@ const methodOverride = require("method-override");
 require("express-ejs-layouts");
 require("express-layouts");
 
-
+require('dotenv').config();
 var app = express.Router();
 
 app.use(bp.json());
@@ -25,11 +25,10 @@ app.use(methodOverride("_method"));
 app.use(bp.urlencoded({ extended: false }));
 app.use(express.static("public"));
 
-require('dotenv').config();
 
 const mongoURI =  process.env.MONGO_URI;
-
-const conn = mongoose.createConnection(process.env.MONGODB_URI || mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
+console.log(mongoURI);
+const conn = mongoose.createConnection( mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 let gfs;
 
