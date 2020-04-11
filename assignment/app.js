@@ -26,9 +26,9 @@ app.use(bp.urlencoded({ extended: false }));
 app.use(express.static("public"));
 
 
-const mongoURI = "mongodb://localhost:27017/YourDB";
+const mongoURI = "mongodb+srv://deeksha325:2515@database-5ivou.mongodb.net/test?retryWrites=true&w=majority";
 console.log(mongoURI);
-const conn = mongoose.createConnection( process.env.MONGODB_URI ||mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
+const conn = mongoose.createConnection( process.env.MONGODB_URI || mongoURI , { useNewUrlParser: true, useUnifiedTopology: true });
 
 let gfs;
 
