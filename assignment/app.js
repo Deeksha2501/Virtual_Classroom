@@ -28,7 +28,7 @@ app.use(express.static("public"));
 
 const mongoURI = "mongodb://localhost:27017/YourDB";
 console.log(mongoURI);
-const conn = mongoose.createConnection( mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
+const conn = mongoose.createConnection( process.env.MONGODB_URI ||mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 let gfs;
 
