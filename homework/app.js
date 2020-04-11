@@ -27,7 +27,7 @@ require('dotenv').config();
 
 const mongoURI =  process.env.MONGO_URI;
 
-const conn = mongoose.createConnection(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
+const conn = mongoose.createConnection(process.env.MONGODB_URI || mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 let gfs;
 
