@@ -259,13 +259,13 @@ app.get("/delete-msg/:cid/:id/:uid/" , async (req , res)=>{
     res.redirect(url);
 });
 
-app.get("/show-classmates/:cid/" , async (req , res)=>{
+app.get("/show-classmates/:cid/:uid" , async (req , res)=>{
     try {
         var cid = req.params.cid;
         const data = await dclass.findById(cid);
-        var id = data.fc_id;
+        var id = data.st_id;
         var name = data.fc_name;
-        res.render("./student/student_people", { data: data.students, cid: cid , id : id  , fc_name : name});
+        res.render("./student/student_people", { data: data.students, cid: cid , id : req.params.uid  , fc_name : name});
     }
     catch (e) {
        console.log("Error" , e);
