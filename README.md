@@ -8,7 +8,7 @@ A web application for online classroom where you can create your own class or ca
 ## Setting up
 
     npm install
-    npm run devstart
+    npm run devStart
 
 Page will automatically get refreshed after you change anything in your files.
 
