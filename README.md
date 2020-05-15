@@ -53,9 +53,9 @@ assignment-privado
 │   ├── post_something.ejs
 │   ├── register.ejs
 │   ├── welcome.ejs
-    └── faculty
-    |   ├── class_creation.ejs
-    |   ├── classes.ejs
+.   └── faculty
+.   |   ├── class_creation.ejs
+.   |   ├── classes.ejs
     |   ├── faculty_assign_create.ejs
     |   ├── faculty_classwork.ejs
     |   ├── faculty_dashboard.ejs
