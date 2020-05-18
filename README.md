@@ -3,6 +3,8 @@
 A web application for online classroom where you can create your own class or can join someone else's. An online Assignment creation / submission and Grading application.
 Check it out at [DS Classroom](https://dsvirtualclassroom.herokuapp.com/) 😉
 
+[![HitCount](http://hits.dwyl.com/Deeksha2501/Online_Classroom_Web_App.svg)](http://hits.dwyl.com/Deeksha2501/Online_Classroom_Web_App)
+
 ## Setting up
 
     npm install
