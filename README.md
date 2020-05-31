@@ -12,6 +12,8 @@ Check it out at [DS Classroom](https://dsvirtualclassroom.herokuapp.com/) 😉
 
 Page will automatically get refreshed after you change anything in your files.
 
+### File Tree
+
 ```
 assignment-privado
 ├── .env
