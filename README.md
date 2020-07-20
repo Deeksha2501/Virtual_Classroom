@@ -80,17 +80,14 @@ Online_Classroom_Web_App
 ```
 ### Screenshots of the project
 
-#### Login page
-![login image](./public/login.png)
-
 #### welcome page
 ![welcome image](./public/wecome.png)
 
 #### Dashboard of user
 ![dashboard](./public/dashboard.png)
 
-#### Create Assignment by teacher
+#### Create Assignment (teacher dashboard)
 ![assignment creation](./public/create_assign.png)
 
-#### sunmitted work page(for student)
+#### Page showing submission of students
 ![submitted work](./public/marks.png)
