@@ -15,7 +15,7 @@ Page will automatically get refreshed after you change anything in your files.
 ### File Tree
 
 ```
-assignment-privado
+Online_Classroom_Web_App
 ├── .env
 ├── .gitignore
 ├── node_modules
