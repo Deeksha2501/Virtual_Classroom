@@ -14,7 +14,7 @@
     "env": "0.0.2",
     "express": "^4.17.1",
     "express-ejs-layouts": "^2.5.0",
-    "express-fileupload": "^1.1.7-alpha.3",
+    "express-fileupload": "^1.1.9",
     "express-flash": "0.0.2",
     "express-layouts": "^1.0.0",
     "express-session": "^1.17.0",
