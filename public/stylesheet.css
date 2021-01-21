@@ -5,6 +5,10 @@
     outline: 0 !important;
 }
 
+.alert{
+	text-align: left;
+}
+
 input[type="button"]{
 	outline:none;
  }
@@ -282,9 +286,10 @@ body{
 
 .dash_head{
 	padding-top: 50px;
-	width: 70%;
+	width: 100%;
 	margin: 0 auto;
 	font-size: 50px;
+	text-align: center;
 	/* background: #FC427B; */
 }
 
@@ -406,21 +411,25 @@ body{
 
 .img_part{
 	/* position: fixed; */
+	text-align: center;
    position: relative;
    margin: 0 auto;
 }
 
 .dash_img{
-	width : 1050px;
-	margin : 100px;
-	border-radius: 15px;
+	width: 90%;
+	
+    /* margin: 100px; */
+    border-radius: 15px;
+    height: 40vh;
+    margin: 100px 0;
 }
 
 .class_name{
 	position: absolute;
 	top : 120px;
 	font-size: 35px;
-	left : 120px;
+	left : 8%;
 	font-weight: 600;
 	color: rgba(255 , 255 , 255 , 0.87);
 }
@@ -429,7 +438,7 @@ body{
 	position: absolute;
 	top : 180px;
 	font-size: 20px;
-	left : 120px;
+	left : 8%;
 	font-weight: 600;
 	color: rgba(255 , 255 , 255 , 0.87);
 }
@@ -438,11 +447,11 @@ body{
 	top : 50%;
 	transform: translateY(-50%);
 	width : 100%;
-	padding: 0 20px;
+	/* padding: 0 20px; */
 }
 
 .pinput-fields{
-	max-width: 86%;
+	max-width: 90%;
 	margin: 0 auto;
 	background: rgba(0 , 0 , 0 , 0.4);
 	padding : 30px;
@@ -473,8 +482,9 @@ body{
 
 
 .disbox{
+	position: relative;
 	display: flex;
-	width : 81%;
+	width : 90%;
 	margin: 0 auto;
 	background: transparent;
 	color: white;
@@ -496,7 +506,7 @@ body{
 	padding-top: 8px;
 	flex-direction: right;
 	width : 80%;
-	margin-left : 50px;
+	margin-left : 30px;
 }
 
 .s_name{
@@ -510,9 +520,11 @@ body{
 
 .deletebox{
 	margin-top: 20px;
+	position: absolute;
+	right: 30px;
 }
 .dicon{
-	margin-left : 60px;
+	/* margin-left : 60px; */
 	color : grey;
 	padding : 15px;
 }
@@ -522,8 +534,9 @@ body{
 }
 
 .cdisbox{
+	position: relative;
 	display: flex;
-	width : 75%;
+	width : 90%;
 	margin: 0 auto;
 	background: transparent;
 	color: white;
@@ -544,7 +557,7 @@ body{
 .cmsg{
 	padding-top: 8px;
 	flex-direction: right;
-	width : 80%;
+	width : 83%;
 	margin-left : 30px;
 }
 
@@ -577,7 +590,7 @@ a:hover, a:visited, a:link, a:active
 	display: flex;
 }
 .cdicon{
-	margin-left : 60px;
+	/* margin-left : 60px; */
 	color : grey;
 	padding : 20px;
 	width: 20px;
@@ -611,7 +624,12 @@ a{
 	position: fixed;
 	margin-top : 25px;
 	margin-left : 10px;
+	text-align: center;
+	width: 100%;
+}
 
+.cdis{
+	margin-top: 100px;
 }
 
 .plusicon{
@@ -642,6 +660,8 @@ a{
    height : 10px;
    width: 30px;
    display: flex;
+   position: absolute;
+   right: 30px;
 }
 
 .ccommon{
@@ -742,17 +762,20 @@ a{
 }
 
 .shcommon{
-	width : 55%;
-	margin: 0 auto;
-	margin-top : 70px;
-	position: absolute;
-	margin-left: 23%;
+    padding: 0 5%;
+    /* text-align: center; */
+	width: 100%;
+	max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 71px;
+    position: absolute;
 }
 
 .teacher{
 	margin : 0 auto;
 	padding-top: 30px;
-	width : 60%;
+	width : 90%;
+	max-width: 1000px;
 }
 
 .f_head{
@@ -782,7 +805,8 @@ a{
 .std{
 	margin : 0 auto;
 	padding-top: 30px;
-	width : 60%;
+	width : 90%;
+	max-width: 1000px;
 }
 
 .stds{
@@ -842,11 +866,11 @@ a{
 	border : none;
 	background : transparent;
 	float : right;
-	margin-right: 30px;
+	margin-right: 5px;
 }
 
 .sbhwf{
-	padding-bottom: 30px;
+	/* padding-bottom: 30px; */
 	float: right;
 }
 
@@ -969,6 +993,23 @@ margin-right: 6px;
 	
 }
 
+#check_img {
+	position: absolute;
+	height: 90vh;
+	width: 100%;
+	bottom: 0;
+}
+
+#check_img img{
+  height: 50vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 #a{
 color : #20d5e2;	
 }
@@ -1004,9 +1045,11 @@ a .button{
 }
 
 .swcommon{
-	width : 100%;
-	position: fixed;
-	margin-right: 30px;
+    text-align: right;
+    width: 100%;
+    position: fixed;
+    margin-right: 30px;
+    list-style: none;
 }
 
 .img img{
@@ -1025,14 +1068,15 @@ a.button{
 }
 
 .lr{
-	float: right;
-	width : 100px;
-	height: 50px;
-	margin : 0;
-	margin-left: -40px;
-	margin-right:   10px;
-	color : white;
-	margin-top : 10px;
+    display: inline-block;
+    /* float: right; */
+    width: 60px;
+    /* height: 50px; */
+    margin: 0;
+    /* margin-left: -40px; */
+    margin-right: 35px;
+    color: white;
+    margin-top: 10px;
 }
 
 .lr a{
@@ -1040,4 +1084,62 @@ a.button{
 }
 .lr a:hover{
 	color: white;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 500px){
+	#check_img img{
+		width: 95%;
+	}
+	.lr{
+		width: 40px;
+	}
+	.dash_img{
+		height: 30vh;
+		margin-bottom: 80px;
+	}
+	.class_name{
+		font-size: 27px;
+	}
+	.join_id{
+		top: 163px;
+		font-size: 16px;
+	}
+	.pinput-fields{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.nav-bar{
+		left: 0;
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.a_f_dash{
+		margin: 0 5px;
+	}
+	.clogo{
+		display: none;
+	}
+	.fh_head{
+		font-size: 13px;
+	}
+
+	.random{
+		width: 60%;
+	}
+}
+
+
+@media only screen and (max-width: 700px){
+	.fh_head{
+		font-size: 18px;
+	}
 }
