@@ -1,6 +1,6 @@
 var express = require("express");
 // const favicon = require('express-favicon');
-var favicon = require('serve-favicon');
+// var favicon = require('serve-favicon');
 
 var app = express.Router();
 var mongoose = require("mongoose");
@@ -20,7 +20,7 @@ require("express-ejs-layouts");
 require("express-layouts");
 
 // app.use(favicon(__dirname + '/public/icon.png'));
-app.use(favicon(__dirname + '../public/icon.png'));
+// app.use(favicon(__dirname + '../public/icon.png'));
 require('dotenv').config();
 var app = express.Router();
 
