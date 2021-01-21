@@ -74,35 +74,33 @@ body{
 	padding-left: 22%;
 }
 
-.dash_button1 {
+.dash_btn {
 	top : 50%;
 	left : 50%;
 	transform: translate(-50%);
 	padding-top: 13px;
-}
-
-.dash_button1{
 	background : none;
-	color : #ccc;
 	width : 240px;
 	height : 80px;
-	border : 1px solid #338033;
 	font-size: 16px;
 	border-radius: 4px;
 	transition : .6s;
 	overflow : hidden;
-
 }
 
-.dash_button1:focus{
+.dash_button1{
+	color : #ccc;
+	border : 1px solid #338033;
+}
+
+.dash_btn:focus{
 	outline: none;
 }
 
-.dash_button1:before{
+.dash_btn:before{
 	content : '';
 	display :block;
 	position : absolute;
-	background : rgba(255 , 255 , 255 , .5);
 	width : 60px;
 	height : 100%;
 	left : 0;
@@ -112,11 +110,10 @@ body{
 	transform: translateX(-130px) skewX(-15deg);
 }
 
-.dash_button1:after{
+.dash_btn:after{
 	content : '';
 	display :block;
 	position : absolute;
-	background : rgba(255 , 255 , 255 , .2);
 	width : 30px;
 	height : 100%;
 	left : 30px;
@@ -124,6 +121,14 @@ body{
 	opacity : 0;
 	filter : blur(30px);
 	transform: translate(-100px) scaleX(-15deg);
+}
+
+.dash_button1:before{
+	background : rgba(255 , 255 , 255 , .5);
+}
+
+.dash_button1:after{
+	background : rgba(255 , 255 , 255 , .2);
 }
 
 .dash_button1:hover{
@@ -131,69 +136,32 @@ body{
 	cursor : pointer;
 }
 
-.dash_button1:hover:before{
+.dash_btn:hover:before{
 	transform : translateX(300px) skewX(-15deg);
 	opacity : .6;
 	transition:  .7s;
 }
 
-.dash_button1:hover:after{
+.dash_btn:hover:after{
 	transform : translateX(300px) skewX(-15deg);
 	opacity : 1;
 	transition:  .7s;
 }
 
 
-.dash_button2 {
-	top : 50%;
-	left : 50%;
-	transform: translate(-50%);
-	padding-top: 13px;
-}
-
 .dash_button2{
-	background : none;
 	color : #ccc;
-	width : 240px;
-	height : 80px;
 	border : 1px solid #4285f4;
-	font-size: 16px;
-	border-radius: 4px;
-	transition : .6s;
-	overflow : hidden;
 
 }
 
-.dash_button2:focus{
-	outline: none;
-}
 
 .dash_button2:before{
-	content : '';
-	display :block;
-	position : absolute;
 	background : rgba(255 , 255 , 255 , .5);
-	width : 60px;
-	height : 100%;
-	left : 0;
-	top : 0;
-	opacity: .5s;
-	filter : blur(30%);
-	transform: translateX(-130px) skewX(-15deg);
 }
 
 .dash_button2:after{
-	content : '';
-	display :block;
-	position : absolute;
 	background : rgba(255 , 255 , 255 , .2);
-	width : 30px;
-	height : 100%;
-	left : 30px;
-	top : 0;
-	opacity : 0;
-	filter : blur(30px);
-	transform: translate(-100px) scaleX(-15deg);
 }
 
 .dash_button2:hover{
@@ -202,86 +170,25 @@ body{
 	color: black;
 }
 
-.dash_button2:hover:before{
-	transform : translateX(300px) skewX(-15deg);
-	opacity : .6;
-	transition:  .7s;
-}
-
-.dash_button2:hover:after{
-	transform : translateX(300px) skewX(-15deg);
-	opacity : 1;
-	transition:  .7s;
-}
-
-.dash_button3 {
-	top : 50%;
-	left : 50%;
-	transform: translate(-50%);
-	padding-top: 13px;
-}
 
 .dash_button3{
-	background : none;
 	color : #ccc;
-	width : 240px;
-	height : 80px;
 	border : 1px solid #fbbc05;
-	font-size: 16px;
-	border-radius: 4px;
-	transition : .6s;
-	overflow : hidden;
 
-}
-
-.dash_button3:focus{
-	outline: none;
 }
 
 .dash_button3:before{
-	content : '';
-	display :block;
-	position : absolute;
 	background : rgba(255 , 255 , 255 , .5);
-	width : 60px;
-	height : 100%;
-	left : 0;
-	top : 0;
-	opacity: .5s;
-	filter : blur(30%);
-	transform: translateX(-130px) skewX(-15deg);
 }
 
 .dash_button3:after{
-	content : '';
-	display :block;
-	position : absolute;
 	background : rgba(255 , 255 , 255 , .2);
-	width : 30px;
-	height : 100%;
-	left : 30px;
-	top : 0;
-	opacity : 0;
-	filter : blur(30px);
-	transform: translate(-100px) scaleX(-15deg);
 }
 
 .dash_button3:hover{
 	background: #fbbc05;
 	cursor : pointer;
 	color: black;
-}
-
-.dash_button3:hover:before{
-	transform : translateX(300px) skewX(-15deg);
-	opacity : .6;
-	transition:  .7s;
-}
-
-.dash_button3:hover:after{
-	transform : translateX(300px) skewX(-15deg);
-	opacity : 1;
-	transition:  .7s;
 }
 
 .dash_head{
