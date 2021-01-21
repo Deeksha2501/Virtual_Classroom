@@ -1,4 +1,7 @@
 var express = require("express");
+// const favicon = require('express-favicon');
+var favicon = require('serve-favicon');
+
 var app = express.Router();
 var mongoose = require("mongoose");
 var faculty = mongoose.model("Faculty");
@@ -16,6 +19,8 @@ const methodOverride = require("method-override");
 require("express-ejs-layouts");
 require("express-layouts");
 
+// app.use(favicon(__dirname + '/public/icon.png'));
+app.use(favicon(__dirname + '../public/icon.png'));
 require('dotenv').config();
 var app = express.Router();
 

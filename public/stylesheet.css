@@ -765,7 +765,7 @@ a{
     padding: 0 5%;
     /* text-align: center; */
 	width: 100%;
-	max-width: 1000px;
+	/* max-width: 1000px; */
     margin: 0 auto;
     margin-top: 71px;
     position: absolute;
@@ -775,7 +775,7 @@ a{
 	margin : 0 auto;
 	padding-top: 30px;
 	width : 90%;
-	max-width: 1000px;
+	/* max-width: 1000px; */
 }
 
 .f_head{
@@ -806,7 +806,7 @@ a{
 	margin : 0 auto;
 	padding-top: 30px;
 	width : 90%;
-	max-width: 1000px;
+	/* max-width: 1000px; */
 }
 
 .stds{
