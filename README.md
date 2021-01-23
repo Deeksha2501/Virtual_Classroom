@@ -1,7 +1,15 @@
 
 # Virtual Classroom(Web-App)
-A web application for online classroom where you can create your own class or can join someone else's. An online Assignment creation / submission and Grading application.
+<!--A web application for online classroom where you can create your own class or can join someone else's. An online Assignment creation / submission and Grading application. -->
+
+- A Full Stack web application for an online classroom where you can create your own class or can join someone else’s.
+- Mentors/teachers can create assignments, create quiz/tests, add study materials and can grade students submissions.
+Students can directly access all the study materials on one portal, can submit assignments, get graded and and can
+even ask doubts on the portal.
+- There is also a discussion tab where teachers can interact virtually with the class and students can ask their queries.
+
 Check it out at [DS Classroom](https://dsvirtualclassroom.herokuapp.com/) 😉
+
 
 [![HitCount](http://hits.dwyl.com/Deeksha2501/Online_Classroom_Web_App.svg)](http://hits.dwyl.com/Deeksha2501/Online_Classroom_Web_App)
 
@@ -80,7 +88,7 @@ Online_Classroom_Web_App
 ```
 ### Screenshots of the project
 
-#### welcome page
+#### Welcome page
 ![welcome image](./public/wecome.png)
 
 #### Dashboard of user
