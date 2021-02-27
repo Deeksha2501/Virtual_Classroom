@@ -20,6 +20,20 @@ Check it out at [DS Classroom](https://dsvirtualclassroom.herokuapp.com/) 😉
 
 Page will automatically get refreshed after you change anything in your files.
 
+### Screenshots of the project
+
+#### Welcome page
+![welcome image](./public/wecome.png)
+
+#### Dashboard of user
+![dashboard](./public/dashboard.png)
+
+#### Create Assignment (teacher dashboard)
+![assignment creation](./public/create_assign.png)
+
+#### Page showing submission of students
+![submitted work](./public/marks.png)
+
 ### File Tree
 
 ```
@@ -86,16 +100,3 @@ Online_Classroom_Web_App
     |   ├── header.ejs
     
 ```
-### Screenshots of the project
-
-#### Welcome page
-![welcome image](./public/wecome.png)
-
-#### Dashboard of user
-![dashboard](./public/dashboard.png)
-
-#### Create Assignment (teacher dashboard)
-![assignment creation](./public/create_assign.png)
-
-#### Page showing submission of students
-![submitted work](./public/marks.png)
