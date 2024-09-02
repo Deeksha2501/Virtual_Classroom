@@ -1,0 +1,106 @@
+.reach_container {
+  text-align: justify;
+  color: black;
+  margin: 70px 0;
+  padding: 20px;
+  height: 70vh;
+  background-color: rgb(246, 229, 229);
+  position: relative;
+}
+
+.reach_image {
+  position: absolute;
+  top: -15px;
+  right: 7%;
+  height: 100%;
+}
+
+.reach_para {
+  padding: 40px 20px;
+  float: left;
+  width: 60%;
+  overflow: hidden;
+}
+
+.reach_map {
+  height: 100%;
+  transform: scale(1.3);
+}
+
+.reach_para_head {
+  font-size: 30px;
+  font-weight: 500;
+  padding: 10px 0;
+}
+
+.reach_para_p {
+  font-size: 14px;
+}
+
+.reach_para_num {
+  padding: 20px 0;
+}
+
+.reach_para_num span {
+  width: 30%;
+  padding-left: 30px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.reach_para_num span:first-child {
+  width: 25%;
+}
+
+.reach_para_num span:last-child {
+  width: 40%;
+  /* border-left: 1px solid rgb(116, 207, 121); */
+}
+
+.reach_para_num span:not(:first-child) {
+  border-left: 1.5px solid rgb(206, 95, 95);
+}
+
+.reach_para_num > span > p {
+  text-align: left;
+  display: block;
+  margin: 0;
+  /* padding: 10px 0; */
+}
+
+.num_value {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.num-head {
+  font-size: 1.4vw;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1200px) {
+  .reach_image img {
+    transform: scale(1.1);
+  }
+  .reach_container {
+    height: 70vh;
+  }
+
+  .reach_image {
+    right: 3%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .reach_image {
+    display: none;
+  }
+  .reach_para {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .num_value {
+    font-size: unset;
+  }
+}

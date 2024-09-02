@@ -1,0 +1,79 @@
+.top-img{
+    width: 100%;
+    overflow: hidden;
+}
+@media screen and (max-width:768px){
+    .top-img img{
+        margin-top: 100px ;
+    }
+}
+.top-img img{
+    width: 100%;
+}
+
+.camp-detail{
+    padding: 3rem;
+    background-color: white;
+    color: black;
+}
+
+.ques{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(68, 4, 4);
+}
+
+.detail{
+    color: rgb(102, 102, 102);
+    text-align: justify;
+}
+
+.drop{
+    background-color: #f9f9f9;
+    color : black;
+    padding: 3rem;
+}
+
+.cities{
+    width: 45%;
+    float: left;
+    padding:  0 5rem;
+    align-items: center;
+
+}
+
+.cities ul{
+    border: 1px solid rgb(189, 189, 189);
+    list-style: none;
+    font-size: 1.5vw;
+    text-align: center;
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+}
+
+.cities ul li{
+    padding: .8vw;
+    border-bottom: 1px solid rgb(180, 180, 180);
+}
+
+.dos-img{
+    /* margin: 12px; */
+    width: 50%;
+    float: right;
+}
+
+.dos-img img{
+    width: 80%;
+}
+
+.drop::after{
+content: "";
+clear: both;
+display: table;
+}
+
+.a{
+    width: 83%;
+    margin-bottom:1rem ;
+}

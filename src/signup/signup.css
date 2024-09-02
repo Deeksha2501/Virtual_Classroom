@@ -1,0 +1,649 @@
+/*builder site css*/
+.loginRegister {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  display: flex;
+  border-radius: 0;
+  transform: none;
+  top: 0;
+  left: 0;
+  -webkit-animation: none;
+  animation: none;
+  background: #fff;
+  position: absolute;
+  z-index: 3;
+}
+.mobileSmall-logo {
+  display: none;
+  float: left;
+
+  margin: 10px 0 15px 10px;
+}
+@media only screen and (max-width: 768px) {
+  .mobileSmall-logo {
+    display: block;
+  }
+}
+.loginRegister .new-CloseButton {
+  position: absolute;
+  cursor: pointer;
+  z-index: 9;
+  top: 25px;
+  right: 25px;
+  width: 53px;
+  height: 53px;
+  text-align: center;
+  background-color: #eee;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+@media only screen and (max-width: 768px) {
+  .loginRegister .new-CloseButton {
+    top: 10px;
+    right: 10px;
+  }
+}
+.loginRegister .new-CloseButton em {
+  display: inline-block;
+  line-height: 60px;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.loginRegister .loginRegisterLeft {
+  box-sizing: border-box;
+  position: relative;
+  width: 55%;
+  background: white;
+  border-radius: 0;
+  padding: 20px 0 20px 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .loginRegister .loginRegisterLeft {
+    display: none;
+  }
+}
+.loginRegister .loginRegisterLeft .loginRegisterLeft-bg1,
+.loginRegister .loginRegisterLeft .loginRegisterLeft-bg2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  z-index: 1;
+  background-image: url("../stock-vector-hands-holding-red-heart-receive-or-accept-love-kindness-care-help-donation-or-hope-charity-1031440357.jpg");
+  background-size: cover;
+}
+.loginRegister .loginRegisterLeft .loginRegisterLeft-bg1.active,
+.loginRegister .loginRegisterLeft .loginRegisterLeft-bg2.active {
+  left: 0;
+}
+.loginRegister {
+  width: 100%;
+  display: flex;
+  height: 100vh;
+}
+@media only screen and (max-width: 768px) {
+  .loginRegister {
+    display: block !important;
+  }
+}
+.loginRegister .loginRegisterLeft .topSmall-logo {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  display: inline-block;
+  background-color: #fff;
+  text-align: center;
+  line-height: 52px;
+  border-radius: 6px;
+  z-index: 2;
+}
+.loginRegister .loginRegisterLeft .topSmall-logo img {
+  width: 95%;
+  height: 95%;
+}
+.loginRegister .loginRegisterRight {
+  box-sizing: border-box;
+  width: 66%;
+  align-items: center;
+  padding: 25px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+  .loginRegister .loginRegisterRight {
+    box-sizing: border-box;
+    width: calc(100% - 20px);
+    clear: both;
+    float: left;
+    padding: 0 15px 60px;
+    max-height: calc(100% - 60px);
+    overflow-y: auto;
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .loginRegisterRight[_ngcontent-serverApp-c98] {
+    height: calc(100vh - 40px);
+  }
+}
+.heading-appdetail,
+.onlyAppdetailPopup {
+  display: none;
+}
+.loginRegister .loginRegisterRight .loginRegisterForm {
+  width: 100%;
+  max-width: 500px;
+}
+@media only screen and (max-width: 768px) {
+  .loginRegister .loginRegisterRight .loginRegisterForm {
+    max-width: 100%;
+  }
+}
+.loginRegister .loginRegisterRight .loginRegisterForm .authHeading {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 35px;
+}
+@media only screen and (max-width: 768px) {
+  .loginRegister .loginRegisterRight .loginRegisterForm .authHeading {
+    margin-bottom: 15px;
+  }
+}
+.loginRegister
+  .loginRegisterRight
+  .loginRegisterForm
+  .authHeading
+  .authHeading-main {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  color: #000;
+  line-height: 38px;
+}
+@media only screen and (max-width: 768px) {
+  .loginRegister
+    .loginRegisterRight
+    .loginRegisterForm
+    .authHeading
+    .authHeading-main {
+    font-size: 34px;
+    line-height: 34px;
+  }
+}
+.loginRegister
+  .loginRegisterRight
+  .loginRegisterForm
+  .authHeading
+  .authHeading-sub {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  font-size: 34px;
+  color: rgba(0, 0, 0, 0.7);
+}
+@media only screen and (max-width: 768px) {
+  .loginRegister
+    .loginRegisterRight
+    .loginRegisterForm
+    .authHeading
+    .authHeading-sub {
+    font-size: 26px;
+    line-height: 34px;
+  }
+}
+.loginRegister .loginRegisterRight .loginRegisterForm ul {
+  margin: 0;
+  padding: 0;
+}
+.loginRegister .loginRegisterRight .loginRegisterForm .signupSteps {
+  display: none;
+}
+.loginRegister .loginRegisterRight .loginRegisterForm .signupSteps.activeStep {
+  display: block;
+}
+.loginRegister .loginRegisterRight .loginRegisterForm ul li {
+  display: block;
+  margin: 15px 0;
+  position: relative;
+  list-style-type: none;
+}
+@media only screen and (max-width: 768px) {
+  .loginRegister .loginRegisterRight .loginRegisterForm ul li {
+    margin: 10px 0;
+  }
+}
+.loginRegister .loginRegisterRight .loginRegisterForm ul li .field-labels {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 0 0 10px;
+}
+.loginRegister .loginRegisterRight .loginRegisterForm ul li .errorMsgBox {
+  float: right;
+  height: 22px;
+  min-width: 10px;
+  margin: 0 0 4px;
+}
+.loginRegister .loginRegisterRight .loginRegisterForm ul li input {
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  font-size: 16px;
+  height: 52px;
+  border-radius: 3px;
+  border: 2px solid #e5e5e5;
+  background-color: #fff;
+  padding: 0 13px;
+}
+@media only screen and (max-width: 768px) {
+  .loginRegister .loginRegisterRight .loginRegisterForm ul li input {
+    font-size: 14px;
+    height: 42px;
+  }
+}
+.loginRegister .loginRegisterRight .loginRegisterForm ul li .results-list {
+  position: absolute;
+  z-index: 9;
+  top: 81px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+@media only screen and (max-width: 768px) {
+  .loginRegister .loginRegisterRight .loginRegisterForm ul li .results-list {
+    top: 71px;
+  }
+}
+.loginRegister .loginRegisterRight .loginRegisterForm ul li .results-list ol {
+  margin: 0;
+  padding: 0;
+}
+.loginRegister
+  .loginRegisterRight
+  .loginRegisterForm
+  ul
+  li
+  .results-list
+  ol
+  li {
+  display: block;
+  list-style-type: none;
+  padding: 5px;
+  cursor: pointer;
+  margin: 0;
+  font-size: 13px;
+}
+.loginRegister .loginRegisterRight .loginRegisterForm ul li .submitButton {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 100%;
+  height: 52px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
+  padding: 8px 10px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 8px 15px #8a1818;
+  border-radius: 3px;
+  background-color: #b22222;
+  overflow: hidden;
+}
+.loginRegister .loginRegisterRight .loginRegisterForm ul li .extraSpace {
+  margin-top: 25px;
+}
+@media only screen and (max-width: 768px) {
+  .loginRegister .loginRegisterRight .loginRegisterForm ul li .submitButton {
+    float: left;
+    height: 42px;
+  }
+}
+.loginRegister
+  .loginRegisterRight
+  .loginRegisterForm
+  ul
+  li
+  .submitButton:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
+}
+.loginRegister
+  .loginRegisterRight
+  .loginRegisterForm
+  ul
+  li
+  .submitButton.errorAnimation:before {
+  opacity: 0;
+  -webkit-animation: erroranimation 0.5s ease-in-out;
+  animation: erroranimation 0.5s ease-in-out;
+}
+.loginRegister .loginRegisterRight .loginRegisterForm ul li .extraText {
+  display: inline-block;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.54);
+  vertical-align: middle;
+  margin: 20px 0 40px;
+  width: 100%;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .loginRegister .loginRegisterRight .loginRegisterForm ul li .extraText {
+    margin: 15px 0 20px;
+  }
+}
+.loginRegister .loginRegisterRight .loginRegisterForm ul li .orAction {
+  display: inline-block;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.9);
+  vertical-align: middle;
+  margin: 30px 0;
+  width: 100%;
+  text-align: center;
+}
+.loginRegister .loginRegisterRight .loginRegisterForm ul li .noMargin {
+  margin-bottom: 0;
+}
+.loginRegister .loginRegisterRight .loginRegisterForm ul li .orAction button {
+  color: #0071e4;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+fieldset,
+legend {
+  padding: 0;
+  border: 0;
+}
+legend {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 21px;
+  line-height: inherit;
+  color: #333;
+  border-bottom: 1px solid #e5e5e5;
+}
+.loginRegister .loginRegisterRight .loginRegisterForm ul li .ex-label {
+  width: auto;
+  position: absolute;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffb80e;
+  z-index: 1;
+  background-color: #fffbe8;
+  bottom: 22px;
+  left: 13px;
+  padding: 3px 10px 0;
+  border-radius: 3px;
+}
+.loginRegister .loginRegisterRight .loginRegisterForm ul li .enteredEmail {
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  font-size: 16px;
+  color: #ffb80e;
+  height: 52px;
+  border-radius: 3px;
+  border: 2px solid #ffb80e;
+  background-color: #fffbe8;
+  padding: 10px;
+  display: inline-block;
+}
+.loginRegister .loginRegisterRight .loginRegisterForm ul li .redBorder input,
+.loginRegister .loginRegisterRight .loginRegisterForm ul li input.redBorder,
+.loginRegister
+  .loginRegisterRight
+  .loginRegisterForm
+  ul
+  li
+  input:focus.ng-invalid {
+  border: 1px solid #ff5c74;
+}
+.loginRegister .loginRegisterRight .loginRegisterForm .socialLogin {
+  width: 100%;
+  text-align: center;
+  clear: both;
+}
+.loginRegister .loginRegisterRight .loginRegisterForm .socialLogin h4 {
+  display: block;
+  position: relative;
+  height: 20px;
+  margin: 0 0 10px;
+}
+.loginRegister .loginRegisterRight .loginRegisterForm .socialLogin h4:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  width: 100%;
+  z-index: 1;
+}
+.loginRegister .loginRegisterRight .loginRegisterForm .socialLogin h4 span {
+  display: inline-block;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.4);
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  padding: 0 15px;
+}
+.loginRegister .loginRegisterRight .loginRegisterForm .socialLogin .socialIcon {
+  box-sizing: border-box;
+  display: inline-block;
+  width: calc(33.33% - 10px);
+  vertical-align: middle;
+  height: 38px;
+  line-height: 38px;
+  border: 1px solid #3a5998;
+  font-size: 16px;
+  cursor: pointer;
+  background: #fff;
+  color: #3b5998;
+  margin-bottom: 15px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+.loginRegister
+  .loginRegisterRight
+  .loginRegisterForm
+  .socialLogin
+  .socialIcon
+  em:before {
+  line-height: 36px;
+}
+
+.loginRegister
+  .loginRegisterRight
+  .loginRegisterForm
+  .socialLogin
+  .socialIcon.googleIcon {
+  font-size: 22px;
+  margin: 0 8px 15px;
+  color: #dc4e41;
+  border: 1px solid #dc4e41;
+}
+
+.loginRegister
+  .loginRegisterRight
+  .loginRegisterForm
+  ul
+  li
+  .registerCheck
+  p
+  input {
+  position: absolute;
+  top: -50px;
+  left: -100px;
+  opacity: 0;
+  z-index: -999;
+}
+.loginRegister .loginRegisterRight .loginRegisterForm ul li .registerCheck {
+  width: 100%;
+  clear: both;
+  position: relative;
+  overflow: hidden;
+}
+.loginRegister .loginRegisterRight .loginRegisterForm ul li .registerCheck p {
+  margin: 0 0 15px;
+  padding: 0 0 0 25px;
+  font-size: 12px;
+  position: relative;
+  color: rgba(0, 0, 0, 0.65);
+}
+.loginRegister
+  .loginRegisterRight
+  .loginRegisterForm
+  ul
+  li
+  .registerCheck
+  p:last-child {
+  margin: 0;
+  color: #686868;
+}
+.loginRegister
+  .loginRegisterRight
+  .loginRegisterForm
+  ul
+  li
+  .registerCheck
+  p
+  label {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  z-index: 9;
+  left: 0;
+  top: 0;
+  border-radius: 2px;
+  background: #fff;
+  border: 1px solid #a7a7a7;
+  display: block;
+  float: left;
+  margin: 0 12px 0 0;
+  cursor: pointer;
+  font-weight: lighter;
+}
+.loginRegister
+  .loginRegisterRight
+  .loginRegisterForm
+  ul
+  li
+  .registerCheck
+  p
+  input:checked
+  + label {
+  background: #0071e4;
+  border: 1px solid #0071e4;
+}
+.loginRegister
+  .loginRegisterRight
+  .loginRegisterForm
+  ul
+  li
+  .registerCheck
+  p
+  label:before {
+  font-weight: 900;
+  font-family: "Font Awesome\ 5 Free";
+  display: none;
+  content: "\f00c";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 2px;
+  font-size: 10px;
+  color: #fff;
+}
+.loginRegister
+  .loginRegisterRight
+  .loginRegisterForm
+  ul
+  li
+  .registerCheck
+  p
+  input:checked
+  + label:before {
+  display: block;
+}
+.loginRegister .loginRegisterRight .loginRegisterForm ul li .registerCheck p a {
+  color: #0071e4;
+  text-decoration: none;
+}
+.new-goBack {
+  position: absolute;
+  cursor: pointer;
+  z-index: 9;
+  top: 25px;
+  left: 37%;
+  width: 52px;
+  height: 52px;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 9px 15px transparent;
+  background: rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+}
+@media only screen and (max-width: 768px) {
+  .new-goBack {
+    position: relative;
+    line-height: 0;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    float: left;
+    background: none;
+    margin: 15px;
+    box-shadow: none;
+  }
+}
+.new-goBack em {
+  display: inline-block;
+  line-height: 52px;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.6);
+  height: 52px;
+  padding-top: 5px;
+}
+@media only screen and (max-width: 768px) {
+  .new-goBack em {
+    line-height: 0;
+    font-size: 22px;
+    height: auto;
+  }
+}
+/*error*/
+.error {
+  color: #b22222;
+
+  margin: 5px auto;
+}
+/*donate*/
+.donate {
+  color: #b22222;
+  font-family: cursive;
+  font-weight: bolder;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
